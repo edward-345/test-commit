@@ -1,0 +1,19 @@
+---
+title: "test"
+author: "Edward J. Lee"
+date: "2025-04-05"
+output: pdf_document
+---
+```{r}
+#test commit
+library(NHANES)
+data(NHANES)
+
+
+model <- lm(TotChol ~ Age + BPSysAve,
+          data = NHANES)
+
+summary(model)
+plot(model)
+#test commit
+```
